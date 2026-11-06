@@ -34,6 +34,7 @@
 <li><strong>Moje projekty na dashboardu:</strong> z přehledu projektů (projekty.blogic.cz, s přihlášením uživatele) se vezmou jen projekty, které uživatel vede (název, firma, částky, stav a odkazy objednávky a výkazu), a uloží se v úložišti doplňku v tomto prohlížeči. Nikam se neposílají.</li>
 <li><strong>Naposledy otevřené:</strong> název, období a adresa naposledy otevřených výkazů, objednávek a projektů (nejvýš 12) se drží jen v úložišti doplňku v tomto prohlížeči. Nikam se neposílají.</li>
 <li><strong>Filtr „Moje“ ve správě kontaktů:</strong> doplněk se zeptá API IBISu (s přihlášením uživatele, stejný dotaz jako stránka sama) na kontakty podle jména uživatele; výsledek jen zobrazí, neukládá ho.</li>
+<li><strong>Kdo chybí (Sloneek):</strong> když má uživatel otevřený Sloneek (app.sloneek.com) a je v něm přihlášený, doplněk s jeho přihlášením načte ze Sloneeku nepřítomnosti na 6 měsíců dopředu u lidí, které mu dovolí vidět jeho role (jméno, e-mail, tým, druh, začátek a konec nepřítomnosti, stav schválení). Výsledek se uloží jen v úložišti doplňku v tomto prohlížeči a zobrazí na dashboardu IBISu. Přihlašovací token Sloneeku se nikam neukládá ani neposílá; mzdy, poznámky a jiné údaje se nečtou.</li>
 <li><strong>Stopky a minutka v panelu:</strong> stav (běží, pozastaveno, nastavená doba) se drží jen v úložišti doplňku v tomto prohlížeči. Doběhnutí minutky ohlásí notifikace Chromu; nic se nikam neposílá.</li>
 <li><strong>Dock:</strong> ikony aplikací z Rozcestníku IBISu se uloží lokálně v prohlížeči, ikony vlastních aplikací se berou z mezipaměti faviconů Chromu (nic se kvůli nim nestahuje). Aplikaci otevře až klik uživatele, buď v nové kartě, nebo v rámečku na dashboardu; doplněk do ní nic nevkládá ani z ní nečte.</li>
 </ul>
@@ -42,6 +43,7 @@
 <li>Jira společnosti Blogic a Jira zákazníka nastavená uživatelem (viz výše).</li>
 <li>Google: Calendar API nebo vložený kalendář (jen agenda uživatele) a synchronizace nastavení doplňku mezi prohlížeči uživatele (chrome.storage.sync, řídí ji Chrome a Google účet v Chromu).</li>
 <li>Open-Meteo a OpenStreetMap Nominatim: jen zaokrouhlená poloha (viz výše).</li>
+<li>Sloneek (api.analytics.sloneek.com): jen dotaz na nepřítomnosti s přihlášením uživatele, když má Sloneek otevřený (viz výše).</li>
 </ul>
 <p>Nic dalšího se nikam neposílá.</p>
 <h2>Co doplněk nedělá</h2>
